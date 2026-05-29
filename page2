@@ -1,0 +1,14 @@
+<body>
+   <link href= "style.css" rel="stylesheet" type="text/css">
+   <nav>
+      <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="page2.html"> My Projects</a></li>
+        </ul>
+  <center>
+    <h2> Dataset App/Digital Design </h2>
+      <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/266d80d7-2d09-40ec-8b21-cf7a29fbfaf9/embed"></iframe>
+    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/e260a5fa-518b-4b14-9661-6e54df77c42d/embed"></iframe>
+  </center>
+  
+</body>
