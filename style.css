@@ -1,3 +1,73 @@
-body {
+img{
+width:1000px;
+border:purple 12px solid;
+}
 
+body {
+  background-color:skyblue
+}
+h2{
+  color:purple;
+  text-decoration:wavy 8px brown underline;
+}
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Navbar Wrapper */
+.navbar {
+  background-color: #1a1a24;
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex Container to align logo and menu */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+.nav-logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Horizontal Menu Configuration */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Creates space between items horizontally */
+}
+
+/* Individual Links */
+.nav-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  color: #ffffff;
+  background-color: #2d2d39;
 }
