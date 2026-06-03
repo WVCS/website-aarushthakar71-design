@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarush's Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="radio" name="page" id="home-radio" checked hidden>
+  <input type="radio" name="page" id="projects-radio" hidden>
 
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="nav-logo">Aarush T</span>
+      <ul class="nav-menu">
+        <li class="nav-item"><label for="home-radio" class="nav-link">Home</label></li>
+        <li class="nav-item"><label for="projects-radio" class="nav-link">My Projects</label></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <div class="page" id="home">
+    <div class="home-container">
+      <h2>Aarush's Website</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRKyjt2Emfh0OIq6h7Lr7zkg3LnJj-uEY9T04EHGaF43v6Ggc7UNk3eGI1OV-stZAt5CIYJezjlmPaRpHd3wrCD_JCoUeosLaiO7uOaQLLqTIUBJfcQbR1ocuNHTXxymn7qhYnQQGK7_RQ&s=19">
+    </div>
+  </div>
+
+  <!-- PROJECTS PAGE -->
+  <div class="page" id="projects">
+    <div class="projects-container">
+      <div class="project">
+        <h3>Drawing Project</h3>
+        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/bf84be4b-d61a-43f9-9cf5-621671bc3a13/embed"></iframe>
+      </div>
+      <div class="project">
+        <h3>Dataset App</h3>
+        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/266d80d7-2d09-40ec-8b21-cf7a29fbfaf9/embed"></iframe>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
