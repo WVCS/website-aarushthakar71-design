@@ -7,11 +7,13 @@
 body {
   background-color: #e8d5f5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
 }
 
-/* HIDE ALL PAGES BY DEFAULT */
+/* HIDE ALL PAGES BY DEFAULT AND ENSURE THEY DON'T TAKE UP LAYOUT SPACE */
 .page {
   display: none;
+  width: 100%;
 }
 
 /* SHOW HOME WHEN HOME RADIO CHECKED */
@@ -86,8 +88,11 @@ h2 {
   text-decoration: underline wavy #8b4513 4px;
 }
 
+/* RESPONSIVE IMAGE FIX */
 img {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
   border: 10px solid #6a0dad;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(106, 13, 173, 0.4);
