@@ -1,46 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aarush's Website</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <input type="radio" name="page" id="home-radio" checked hidden>
-  <input type="radio" name="page" id="projects-radio" hidden>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <nav class="navbar">
-    <div class="nav-container">
-      <span class="nav-logo">Aarush T</span>
-      <ul class="nav-menu">
-        <li class="nav-item"><label for="home-radio" class="nav-link">Home</label></li>
-        <li class="nav-item"><label for="projects-radio" class="nav-link">My Projects</label></li>
-      </ul>
-    </div>
-  </nav>
+body {
+  background-color: #e8d5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  <!-- HOME PAGE -->
-  <div class="page" id="home">
-    <div class="home-container">
-      <h2>Aarush's Website</h2>
-      <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRKyjt2Emfh0OIq6h7Lr7zkg3LnJj-uEY9T04EHGaF43v6Ggc7UNk3eGI1OV-stZAt5CIYJezjlmPaRpHd3wrCD_JCoUeosLaiO7uOaQLLqTIUBJfcQbR1ocuNHTXxymn7qhYnQQGK7_RQ&s=19">
-    </div>
-  </div>
+/* HIDE ALL PAGES BY DEFAULT */
+.page {
+  display: none;
+}
 
-  <!-- PROJECTS PAGE -->
-  <div class="page" id="projects">
-    <div class="projects-container">
-      <div class="project">
-        <h3>Drawing Project</h3>
-        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/bf84be4b-d61a-43f9-9cf5-621671bc3a13/embed"></iframe>
-      </div>
-      <div class="project">
-        <h3>Dataset App</h3>
-        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/266d80d7-2d09-40ec-8b21-cf7a29fbfaf9/embed"></iframe>
-      </div>
-    </div>
-  </div>
+/* SHOW HOME WHEN HOME RADIO CHECKED */
+#home-radio:checked ~ #home {
+  display: block;
+}
 
-</body>
-</html>
+/* SHOW PROJECTS WHEN PROJECTS RADIO CHECKED */
+#projects-radio:checked ~ #projects {
+  display: block;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #6a0dad;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #f0d0ff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: #4a0080;
+}
+
+/* HOME PAGE */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #4a0080;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-decoration: underline wavy #8b4513 4px;
+}
+
+img {
+  width: 500px;
+  border: 10px solid #6a0dad;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(106, 13, 173, 0.4);
+}
+
+/* PROJECTS PAGE */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.project {
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(106, 13, 173, 0.3);
+  border: 3px solid #6a0dad;
+}
+
+h3 {
+  color: #6a0dad;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
